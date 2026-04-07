@@ -4,8 +4,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="es">
+      <body>
+        {children}
+        <footer className="py-10 flex justify-center items-center">
+          Hecho con amor por la gente de Vercel
+        </footer>
+      </body>
     </html>
   );
 }
