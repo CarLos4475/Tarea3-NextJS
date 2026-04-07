@@ -1,0 +1,77 @@
+1 ¿Qué es Next.js y por qué se dice que es el framework de React más popular?
+R: Es un framework que añade renderizado en el servidor (SSR) y optimizaciones automáticas a React.
+
+2 ¿Cuál es el comando exacto con npx para inicializar un proyecto de Next.js asegurando usar la última versión?
+R: npx create-next-app@latest
+
+3 ¿Cuál es el comando utilizado para levantar el entorno de desarrollo y en qué puerto se ejecuta por defecto?
+R: npm run dev y se ejecuta en el puerto 3000.
+
+4 ¿Qué función cumple el comando npm run build en un proyecto de Next.js?
+R: Compila y optimiza el código para su despliegue en producción.
+
+5 Describe para que sirven las carpetas, public y app
+R: public guarda archivos estáticos (imágenes, fuentes); app contiene las rutas y el código de la aplicación.
+
+6 ¿Que es un CCS MODULE y como se usan?
+R: Archivos de estilos que generan clases con nombres únicos; se importan y usan como objetos en JavaScript.
+
+7 ¿Que hace el componente Layout.tsx ?
+R: Define una estructura visual compartida (como un menú o pie de página) que envuelve a otras páginas.
+
+8 ¿Que es el enrutamiento ?
+R: Es el mecanismo que asocia una URL específica en el navegador con la página web que se debe mostrar.
+
+9 ¿Cual es la diferencia entre Image e img?
+R: <Image> de Next.js optimiza el formato, peso y tamaño automáticamente; <img> de HTML carga el archivo original tal cual.
+
+10 ¿Que es el Lazy Load?
+R: Es una técnica que retrasa la carga de imágenes hasta que están a punto de aparecer en la pantalla del usuario.
+
+11 Cual es el funcionamiento del siguiente codigo, en que momento se muestra cada imagen
+R: La primera imagen (hero-desktop) se muestra solo en pantallas grandes, y la segunda (hero-mobile) se muestra solo en pantallas pequeñas.
+
+12 ¿Como funciona el enrutamiento en Next JS ?
+R: Se basa en el sistema de archivos (File System Routing); cada carpeta con un archivo page.tsx representa una ruta.
+
+13 ¿Que es una ruta en el contexto web y donde las hemos visto en la clase ?
+R: Es la dirección URL de una vista; las vimos representadas por las carpetas (dashboard, customers, invoices).
+
+14 ¿Que arrojo a MiduDev el localhost:300/dashboard, donde hemos visto esos errores en la clase ?
+R: Arrojó un error 404 de "Página no encontrada" porque la ruta no existía aún.
+
+15 ¿Que arrojo a MiduDev el localhost:300/dashboard, donde hemos visto esos errores en la clase ?
+R: Arrojó un error 404 (es la misma pregunta que la 14).
+
+16 ¿Que es el File System Routing?
+R: Es la forma de crear rutas web basándose únicamente en cómo organizas las carpetas y archivos en tu proyecto.
+
+17 ¿Como funcionan las rutas anidadas?
+R: Se logran creando una carpeta dentro de otra en el proyecto (por ejemplo, la carpeta invoices dentro de dashboard).
+
+18 Investiga por que es necesario esto: (export default function)
+R: Es necesario para que Next.js sepa exactamente qué componente debe convertir en la página principal de esa ruta.
+
+19 ¿Para que sirve el componente Link?
+R: Sirve para navegar entre páginas de la aplicación de forma rápida y sin tener que recargar la página completa en el navegador.
+
+20 ¿Que se carga cuando usamos <a> y que cuando se usa <Link> ?
+R: Con <a> se recarga toda la página y todos sus recursos desde cero; con <Link> solo se carga el código específico de la nueva vista.
+
+21 Investiga que es un Hook
+R: Es una función especial de React que te permite acceder a características del ciclo de vida y del estado dentro de componentes funcionales.
+
+22 ¿Que hooks usa Midu?
+R: En esta parte del tutorial utiliza específicamente el hook usePathname de Next.js.
+
+23 ¿Por que ocurre el siguiente error?
+R: Porque se intentó usar un hook exclusivo del cliente (usePathname) en un componente de servidor; se soluciona agregando la directiva 'use client' al inicio del archivo.
+
+24 ¿Es posible ejecutar los componentes de react en el cliente y el servidor?
+R: Sí, Next.js ejecuta los componentes por defecto en el servidor, pero puedes elegir ejecutarlos en el cliente con 'use client'.
+
+25 ¿Es posible ejecutar los componentes de react en el cliente y el servidor?
+R: Sí (es exactamente la misma pregunta que la 24).
+
+26 ¿Que es el code splitting?
+R: Es la técnica de dividir el código de la aplicación en fragmentos pequeños para cargar solo lo estrictamente necesario en cada ruta, mejorando la velocidad.
